@@ -41,7 +41,7 @@ AI-Document-Assistant/
 
 
 ## Installation
-```bash
+ ```bash 
 # Clone the repository
 git clone https://github.com/yourusername/AI-Document-Assistant.git
 cd AI-Document-Assistant
@@ -51,9 +51,19 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -r requirements.txt    
 
-
-Environment Variables
+```
+## Environment Variables
 
 Create a .env file in the root directory with:
+OPENAI_API_KEY=your_openai_api_key
+
+## Usage
+# Extract text & build index
+python src/extract_text.py
+python src/build_index.py
+
+# Run query engine
+python src/query_engine.py
+
